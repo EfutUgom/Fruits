@@ -1,0 +1,76 @@
+body{
+	background: linear-gradient(rgba(9, 9, 9, 0.7), rgba(26, 8, 9, 0.8)), url("basket.jpg");
+	background-color: white;
+	margin: 20px;
+	background-size: cover;
+	padding: 0px;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-content: center;
+	position: relative;
+	/*max-width: 760px;*/
+	width: 100%;
+	/*margin: auto;
+	background-color: white;
+	border: white solid 3px;*/
+}
+
+#current{
+	width: 800px;
+	height: 500px;
+	border-radius: 15px;
+}
+
+/*.main-img img{
+	height: 500px;
+}
+
+.main-img img, .imgs img{
+	width: 100%;
+}
+
+.imgs{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}*/
+
+.imgs{
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+img{
+	width: 50px;
+	/*width: 250px;*/
+	height: 15vh;
+	/*height: 30vh;*/
+	margin: 10px;
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius: 300px;
+}
+
+img:hover{
+	opacity: 0.3;
+}
+
+@keyframes{
+	to{
+		opacity=1;
+	}
+}
+
+fade-in{
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in 1 forwards; 
+}
